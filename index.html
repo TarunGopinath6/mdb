@@ -1,243 +1,828 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5,11,2/css/all.css"
-    />
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDB</title>
   </head>
-</html>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-primary bg-black">
+  <body class="bg-black m-0 p-0">
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <!-- Container wrapper -->
       <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">Brand</a>
-
         <!-- Toggle button -->
         <button
           class="navbar-toggler"
           type="button"
           data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-mdb-target="#navbarCenteredExample"
+          aria-controls="navbarCenteredExample"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <i class="fas fa-bars"></i>
         </button>
+        <img src="pictures/taitrial.png" alt="" height="60px" />
 
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarCenteredExample"
+        >
           <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <!-- Navbar dropdown -->
-            <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link active"
+                aria-current="page"
                 href="#"
-                id="navbarDropdown"
-                role="button"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
+                style="font-size: 18px"
+                >Home</a
               >
-                Dropdown
-              </a>
-              <!-- Dropdown menu -->
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link disabled"
+                class="nav-link active"
+                aria-current="page"
                 href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
+                style="font-size: 18px"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="font-size: 18px"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item pt-2 pl-2" style="font-size: 18px">
+              <a
+                data-mdb-toggle="modal"
+                href="#exampleModal"
+                style="color: white; text-decoration: none"
+                >Contact</a
               >
             </li>
           </ul>
-          <!-- Left links -->
 
-          <!-- Search form -->
-          <form class="d-flex input-group w-auto">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Type query"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-primary"
-              type="button"
-              data-mdb-ripple-color="dark"
-            >
-              Search
-            </button>
-          </form>
+          <!-- Left links -->
         </div>
+        <a
+          class="nav-link"
+          href="https://www.instagram.com/teamaviatorsinternational/?hl=en"
+          target="_blank"
+        >
+          <span
+            ><i class="fab fa-instagram mt-3 mr-0" style="font-size: 18px"></i
+          ></span>
+        </a>
+        <a class="nav-link" href="mailto:teamaviatorsinternational@gmail.com">
+          <span
+            ><i class="far fa-envelope mt-3 ml-0" style="font-size: 18px"></i
+          ></span>
+        </a>
         <!-- Collapsible wrapper -->
       </div>
       <!-- Container wrapper -->
     </nav>
-  </header>
-  <main>
-    <div class="containter">
-      <div class="row mb-5 my-5">
-        <div class="col-md-5">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-mdb-ripple-color="light"
-          >
-            <img
-              src="https://mdbootstrap.com/img/new/fluid/city/113.jpg"
-              class="w-100"
-            />
-            <a href="#!">
-              <div
-                class="mask"
-                style="background-color: rgba(251, 251, 251, 0.2)"
-              ></div>
-            </a>
+    <!-- Navbar -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-        </div>
-        <div class="col-md-7 gx-5">
-          <h1>My awesome heading</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            tenetur soluta dolorum obcaecati repellat labore in expedita,
-            nesciunt unde neque accusamus sint mollitia iste, autem nemo
-            consequuntur, incidunt iusto? Quae.
-          </p>
-          <hr />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-            quaerat libero magnam doloribus aliquam a tempore dolorem, ab ullam,
-            perferendis laudantium illum modi suscipit, dolores quasi corporis
-            cum laboriosam dolore?
-          </p>
-          <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div
-              class="bg-image hover-overlay ripple"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#!" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div
-              class="bg-image hover-overlay ripple"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="https://mdbootstrap.com/img/new/standard/nature/112.jpg"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#!" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div
-              class="bg-image hover-overlay ripple"
-              data-mdb-ripple-color="light"
-            >
-              <img
-                src="https://mdbootstrap.com/img/new/standard/nature/113.jpg"
-                class="img-fluid"
-              />
-              <a href="#!">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.15)"
-                ></div>
-              </a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#!" class="btn btn-primary">Button</a>
-            </div>
+          <div class="modal-body">
+            <form>
+              <!-- Name input -->
+              <div class="form-outline mb-4 mt-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Name</label>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2"
+                  >Email address</label
+                >
+              </div>
+
+              <!-- Message input -->
+              <div class="form-outline mb-2">
+                <textarea
+                  class="form-control"
+                  id="form4Example3"
+                  rows="4"
+                ></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="form4Example4"
+                  checked
+                />
+                <label class="form-check-label" for="form4Example4">
+                  Send me a copy of this message
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </main>
-  <footer>
+    <!-- Modal -->
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCrossfade"
+      class="carousel slide carousel-fade"
+      data-mdb-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleCrossfade"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleCrossfade"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video
+            src="pictures/introo.mp4"
+            autoplay
+            muted
+            style="width: 100%"
+            loop
+          ></video>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/taiteam.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselExampleCrossfade"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselExampleCrossfade"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide bg-dark pb-5"
+      data-mdb-ride="carousel"
+    >
+      <div
+        class="text-white text-center pt-4 pb-0"
+        style="font-size: 35px; font-weight: bold"
+      >
+        <p>Our Projects</p>
+      </div>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card h-100">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="pictures/orel.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body bg-white">
+                  <h5 class="card-title">Orel 2017</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card h-100">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="pictures/micro2018.png" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Micro class aircraft 2018</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card h-100">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="pictures/micro2019.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Micro class aircraft 2019</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card h-100">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="pictures/regular2019.png" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Regular class aircraft 2019</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card h-100">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="pictures/micro2020.png" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Micro class aircraft 2020</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 p-1">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay hover-zoom hover-shadow ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Background image -->
+    <div
+      class="p-5 text-center bg-image mb-5 mt-5"
+      style="background-image: url('pictures/milkyway.jpg'); height: 800px"
+    >
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-5" style="font-size: 50px">Who are we ?</h1>
+            <h4 class="mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              id! <br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Libero, id! <br />Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Libero, id! <br />Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Libero, id! <br />Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Libero, id!
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background image -->
+    <div class="bg-dark mt-5 pt-5 justify-content-center">
+      <div class="row text-center">
+        <h2 class="text-white mb-4">Our Sponsors</h2>
+      </div>
+    </div>
+    <div class="row bg-dark pb-5">
+      <div class="col-lg-3 mt-4 text-center">
+        <img src="pictures/tailogo.png" alt="" />
+      </div>
+      <div class="col-lg-3 mt-4 text-center">
+        <img src="pictures/tailogo.png" alt="" />
+      </div>
+      <div class="col-lg-3 mt-4 text-center">
+        <img src="pictures/tailogo.png" alt="" />
+      </div>
+      <div class="col-lg-3 mt-4 mb-5 text-center mb-3">
+        <img src="pictures/tailogo.png" alt="" />
+      </div>
+    </div>
+    <!-- Background image -->
+
+    <!-- Rows -->
+    <div
+      class="container bg-danger mt-5 mb-3 hover-zoom"
+      style="height: 300px; border-radius: 20px"
+    >
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="pictures/coder.jpg"
+            alt=""
+            style="
+              object-fit: cover;
+              height: 300px;
+              width: 80%;
+              border-radius: 20px;
+            "
+          />
+        </div>
+        <div class="col-lg-6 align-items-center justify-content-center">
+          <p
+            style="
+              color: white;
+              text-align: center;
+              margin-top: 95px;
+              margin-right: 250px;
+              font-size: 50px;
+              float: right;
+            "
+          >
+            Join Us
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container bg-warning mb-3 hover-zoom"
+      style="height: 300px; border-radius: 20px"
+    >
+      <div class="row">
+        <div class="col-lg-12" style="text-align: right">
+          <img
+            src="pictures/coder.jpg"
+            alt=""
+            style="
+              object-fit: cover;
+              height: 300px;
+              width: 40%;
+              border-radius: 20px;
+              float: right;
+            "
+          />
+          <p
+            style="
+              color: white;
+              text-align: left;
+              margin-top: 95px;
+              margin-right: 300px;
+              font-size: 50px;
+              float: right;
+            "
+          >
+            Partner with Us
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container bg-secondary mb-3 hover-zoom"
+      style="height: 300px; border-radius: 20px"
+    >
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="pictures/coder.jpg"
+            alt=""
+            style="
+              object-fit: cover;
+              height: 300px;
+              width: 80%;
+              border-radius: 20px;
+            "
+          />
+        </div>
+        <div class="col-lg-6 align-items-center justify-content-center">
+          <p
+            style="
+              color: white;
+              text-align: center;
+              margin-top: 95px;
+              margin-right: 250px;
+              font-size: 50px;
+              float: right;
+            "
+          >
+            Learn with Us
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container bg-info mb-5 hover-zoom"
+      style="height: 300px; border-radius: 20px"
+    >
+      <div class="row">
+        <div class="col-lg-12" style="text-align: right">
+          <img
+            src="pictures/coder.jpg"
+            alt=""
+            style="
+              object-fit: cover;
+              height: 300px;
+              width: 40%;
+              border-radius: 20px;
+              float: right;
+            "
+          />
+          <p
+            style="
+              color: white;
+              text-align: left;
+              margin-top: 95px;
+              margin-right: 260px;
+              font-size: 50px;
+              float: right;
+            "
+          >
+            Share your ideas
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Rows -->
+
     <!-- Footer -->
-    <footer class="bg-dark text-white">
+    <footer class="bg-black text-center text-white pt-5">
       <!-- Grid container -->
       <div class="container p-4">
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
           <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #3b5998"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-facebook-f"></i
@@ -245,8 +830,7 @@
 
           <!-- Twitter -->
           <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #55acee"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-twitter"></i
@@ -254,8 +838,7 @@
 
           <!-- Google -->
           <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #dd4b39"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-google"></i
@@ -263,8 +846,7 @@
 
           <!-- Instagram -->
           <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #ac2bac"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-instagram"></i
@@ -272,16 +854,15 @@
 
           <!-- Linkedin -->
           <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #0082ca"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
+
           <!-- Github -->
           <a
-            class="btn btn-primary btn-floating m-1"
-            style="background-color: #333333"
+            class="btn btn-outline-light btn-floating m-1"
             href="#!"
             role="button"
             ><i class="fab fa-github"></i
@@ -443,5 +1024,5 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-  </footer>
-</body>
+  </body>
+</html>
